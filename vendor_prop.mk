@@ -14,6 +14,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.default.spkrdc=9929 \
     persist.vendor.audio.default.rcvrdc=11243
 
+PRODUCT_ODM_PROPERTIES += \
+    persist.vendor.audio.fluence.speaker=true \
+    persist.vendor.audio.fluence.voicecall=true
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.expose.aux=1 \
