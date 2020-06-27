@@ -34,6 +34,7 @@
 
 #include <android-base/properties.h>
 #include <android-base/logging.h>
+#include <init/DeviceLibinit.h>
 
 #include "property_service.h"
 #include "vendor_init.h"
@@ -61,7 +62,7 @@ void property_override(char const prop[], char const value[], bool add = true)
 }
 
 
-void vendor_load_properties()
+void vendor_load_device_properties()
 {
     std::string bootsku;
     std::string device;

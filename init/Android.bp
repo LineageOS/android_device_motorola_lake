@@ -16,10 +16,10 @@
 
 cc_library_static {
     name: "libinit_lake",
-    recovery_available: true,
     srcs: ["init_lake.cpp"],
     include_dirs: [
         "system/core/base/include",
-        "system/core/init"
+        "system/core/init",
+        "device/motorola/sdm660-common"
     ]
 }
