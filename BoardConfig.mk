@@ -57,8 +57,5 @@ TARGET_HAS_NO_WLAN_STATS := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
-# SELinux
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-
 # inherit from the proprietary version
 -include vendor/motorola/lake/BoardConfigVendor.mk

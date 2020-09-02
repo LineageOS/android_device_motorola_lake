@@ -25,18 +25,3 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on early-init
-    # Haptic aw869x
-    insmod /vendor/lib/modules/aw869x.ko
-    insmod /vendor/lib/modules/bq2597x_mmi.ko
-    insmod /vendor/lib/modules/mmi_pl_chg_manager.ko
-    insmod /vendor/lib/modules/ets_fps_mmi.ko
-
-on post-fs-data
-    # Start loading touch modules
-    start vendor.oem_panel
-
-service vendor.oem_panel /vendor/bin/init.oem.panel.sh
-    user root
-    oneshot
-    disabled

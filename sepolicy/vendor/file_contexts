@@ -1,3 +1,0 @@
-/(vendor|system/vendor)/bin/init\.oem\.panel\.sh        u:object_r:init-oem-panel-sh_exec:s0
-/sys/devices/virtual/graphics/fb([0-3])+/panel_supplier		u:object_r:sysfs_graphics:s0
-/sys/devices/virtual/graphics/fb([0-3])+/controller_drv_ver		u:object_r:sysfs_graphics:s0

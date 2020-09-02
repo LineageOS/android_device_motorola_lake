@@ -65,11 +65,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += qcom.fmradio
 
-# Init
-PRODUCT_PACKAGES += \
-    init.lake.rc \
-    init.oem.panel.sh
-
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.1-service \
