@@ -22,7 +22,7 @@ BOARD_USES_KEYMASTER_4 := true
 DEVICE_PATH := device/motorola/lake
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := lake
+TARGET_OTA_ASSERT_DEVICE := lake,lake_n
 
 # Display
 TARGET_SCREEN_DENSITY := 420
