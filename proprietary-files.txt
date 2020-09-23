@@ -1,4 +1,4 @@
-# Audio ACDB
+# Audio - ACDB
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
 vendor/etc/acdbdata/Global_cal.acdb
@@ -6,6 +6,18 @@ vendor/etc/acdbdata/Handset_cal.acdb
 vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
+
+# Audio - Prebuilt
+vendor/lib/hw/audio.primary.sdm660.so
+vendor/lib/vndk/libtinyalsa.so
+vendor/lib/libmotaudioutils.so
+vendor/lib/libsensorndkbridge.so
+vendor/lib/libtinycompress_vendor.so
+vendor/lib/libunshorten.so
+
+# Audio - Soundfx
+vendor/lib/soundfx/libmmieffectswrapper.so
+vendor/lib/soundfx/libspeakerbundle.so
 
 # Audio - Speaker Protection
 vendor/firmware/cs35l41-dsp1-diag.wmfw
