@@ -25,3 +25,35 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on boot
+    # change permission for capsensor
+    chown system system /sys/class/sensors/Moto\ CapSense\ Ch0/enable
+    chown system system /sys/class/sensors/Moto\ CapSense\ Ch0/poll_delay
+    chown system system /sys/class/sensors/Moto\ CapSense\ Ch1/enable
+    chown system system /sys/class/sensors/Moto\ CapSense\ Ch1/poll_delay
+    chown system system /sys/class/sensors/Moto\ CapSense\ Ch2/enable
+    chown system system /sys/class/sensors/Moto\ CapSense\ Ch2/poll_delay
+    chmod 0660 /sys/class/sensors/Moto\ CapSense\ Ch0/enable
+    chmod 0660 /sys/class/sensors/Moto\ CapSense\ Ch0/poll_delay
+    chmod 0660 /sys/class/sensors/Moto\ CapSense\ Ch1/enable
+    chmod 0660 /sys/class/sensors/Moto\ CapSense\ Ch1/poll_delay
+    chmod 0660 /sys/class/sensors/Moto\ CapSense\ Ch2/enable
+    chmod 0660 /sys/class/sensors/Moto\ CapSense\ Ch2/poll_delay
+    chown system system /sys/class/capsense/reset
+
+    # Change ownership and permission for 27W charge factory testing
+    chown root oem_5004 /sys/class/power_supply/bq2597x/voltage_now
+    chown root oem_5004 /sys/class/power_supply/bq2597x/charging_enabled
+    chmod 0664 /sys/class/power_supply/bq2597x/charging_enabled
+
+    # Change ownership and permission for vibrator awinic with extra functions
+    chown system system /sys/class/leds/vibrator/seq
+    chmod 0660 /sys/class/leds/vibrator/seq
+    chown system system /sys/class/leds/vibrator/extra
+    chmod 0660 /sys/class/leds/vibrator/extra
+
+    # Change ownership and permission for camera dual calibration data
+    chown oem_5004 oem_5004 /mnt/vendor/persist/camera/dualcal/dual_cal_data.bin
+    chown oem_5004 oem_5004 /mnt/vendor/persist/camera/dualcal/module_id.bin
+    chmod 0664 /mnt/vendor/persist/camera/dualcal/dual_cal_data.bin
+    chmod 0664 /mnt/vendor/persist/camera/dualcal/module_id.bin
