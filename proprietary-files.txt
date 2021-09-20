@@ -1,4 +1,4 @@
-# Device Proprietary files - from motorola/lake_retail/lake:10/QPWS30.61-21-18-7/fac4a:user/release-keys, unless pinned
+# Device Proprietary files - from motorola/lake_revvl/lake:10/QPWS30.142-Q3-28-25-13/9c8058:user/release-keys, unless pinned
 #
 
 # Audio - ACDB
