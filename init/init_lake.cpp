@@ -83,25 +83,26 @@ void vendor_load_device_properties()
     bootsku = GetProperty("ro.boot.hardware.sku", "");
     if (bootsku == "XT1965-T") {
         /* T-Mobile REVVLRY+ */
-        property_override_device("ro.build.description", "lake_revvl_n-user 9 PCWS29.83-56-12 ec5de release-keys");
+        property_override_device("ro.build.description", "lake_revvl-user 10 QPWS30.142-Q3-28-25-13 9c8058 release-keys");
         property_override_device("persist.vendor.radio.customer_mbns", "tmo_usa_ims_default.mbn");
         property_override_device("persist.vendor.radio.data_con_rprt", "1");
         property_override_device("persist.vendor.ims.playout_delay", "10");
         property_override_device("persist.vendor.ims.cam_sensor_delay", "20");
         property_override_device("persist.vendor.ims.display_delay", "40");
         for (const auto &source : ro_props_default_source_order) {
-            set_ro_build_prop(source, "fingerprint", "motorola/lake_revvl/lake:9/PCWS29.83-56-12/ec5de:user/release-keys");
-            set_ro_product_prop(source, "device", "lake_n");
+            set_ro_build_prop(source, "fingerprint", "motorola/lake_revvl/lake:10/QPWS30.142-Q3-28-25-13/9c8058:user/release-keys");
+            set_ro_product_prop(source, "device", "lake");
             set_ro_product_prop(source, "model", "REVVLRY+");
-            set_ro_product_prop(source, "name", "lake_revvl_n");
+            set_ro_product_prop(source, "name", "lake_revvl");
         }
     } else {
         /* moto g(7) plus (Unlocked) */
-        property_override_device("ro.build.description", "lake-user 10 QPW30.61-21 d18ed release-keys");
+        property_override_device("ro.build.description", "lake_retail-user 10 QPW30.61-21-18-7-12 b1002 release-keys");
         for (const auto &source : ro_props_default_source_order) {
-            set_ro_build_prop(source, "fingerprint", "motorola/lake_retail/lake:10/QPW30.61-18/d18ed:user/release-keys");
+            set_ro_build_prop(source, "fingerprint", "motorola/lake_retail/lake:10/QPWS30.61-21-18-7-12/b1002:user/release-keys");
             set_ro_product_prop(source, "device", "lake");
             set_ro_product_prop(source, "model", "moto g(7) plus");
+            set_ro_product_prop(source, "name", "lake_retail");
         }
     }
 
