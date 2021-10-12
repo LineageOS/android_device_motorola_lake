@@ -32,6 +32,9 @@ ro.vendor.fm.use_audio_session=true
 # Keymaster 4.0 - TDES support
 ro.hardware.keystore_desede=true
 
+# Notch
+ro.support_hide_display_cutout=true
+
 # Sensors
 ro.hardware.sensors=lake
 ro.vendor.sensors.maghalcal=true
