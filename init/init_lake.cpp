@@ -102,7 +102,7 @@ void vendor_load_device_properties()
             set_ro_build_prop(source, "fingerprint", "motorola/lake_retail/lake:10/QPWS30.61-21-18-7-12/b1002:user/release-keys");
             set_ro_product_prop(source, "device", "lake");
             set_ro_product_prop(source, "model", "moto g(7) plus");
-            set_ro_product_prop(source, "name", "lake_retail");
+            set_ro_product_prop(source, "name", "lake");
         }
     }
 
