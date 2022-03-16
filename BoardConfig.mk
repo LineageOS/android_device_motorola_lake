@@ -31,7 +31,7 @@ AB_OTA_PARTITIONS += \
     vendor
 
 # Assertions
-TARGET_OTA_ASSERT_DEVICE := lake|lake_n
+TARGET_OTA_ASSERT_DEVICE := lake,lake_n
 
 # Display
 TARGET_SCREEN_DENSITY := 420
