@@ -452,6 +452,7 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 # Camera - JNI
 system/etc/permissions/com.motorola.motosignature.xml
 system/etc/permissions/privapp-permissions-com.motorola.camera2.xml|7d108928f254ddd31d853e0bc59fd9e2bc244241
+system/etc/permissions/com.motorola.camera2.denali.xml
 system/priv-app/MotCamera2/lib/arm64/libarcsoft_dualcam_refocus.so
 system/priv-app/MotCamera2/lib/arm64/libarcsoft_supernight.so
 system/priv-app/MotCamera2/lib/arm64/libbg-postproc-jni.so
