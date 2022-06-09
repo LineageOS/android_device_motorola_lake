@@ -11,11 +11,11 @@ vendor/etc/acdbdata/Speaker_cal.acdb
 
 # Audio - Prebuilt
 vendor/lib/hw/audio.primary.sdm660.so
-vendor/lib/vndk/libtinyalsa.so
 vendor/lib/libmotaudioutils.so
 vendor/lib/libsensorndkbridge.so
 vendor/lib/libtinycompress_vendor.so
 vendor/lib/libunshorten.so
+vendor/lib/vndk/libtinyalsa.so
 
 # Audio - Soundfx
 vendor/lib/soundfx/libmmieffectswrapper.so
