@@ -16,6 +16,13 @@ function blob_fixup() {
         vendor/lib/libmmcamera2_pproc_modules.so)
             sed -i "s/ro.product.manufacturer/ro.product.nopefacturer/" "${2}"
             ;;
+        # Use VNDK 32 libutils
+        vendor/lib/hw/audio.primary.sdm660.so | vendor/lib/libaudioroute.so | vendor/lib/libmotaudioutils.so | vendor/lib/libsensorndkbridge.so | vendor/lib/libtinycompress.so | vendor/lib/libtinycompress_vendor.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
+        vendor/lib/soundfx/libspeakerbundle.so | vendor/lib/soundfx/libmmieffectswrapper.so | vendor/lib/libeqservicebridge.so | vendor/lib/motorola.hardware.audio.eqservice@1.0_vendor.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
     esac
 }
 
