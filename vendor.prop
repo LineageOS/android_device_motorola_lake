@@ -20,6 +20,9 @@ bluetooth.device.default_name=moto g(7) plus
 persist.vendor.camera.expose.aux=1
 vendor.video.disable.ubwc=1
 
+# Display
+ro.hardware.vulkan=sdm660
+
 # Fluence
 persist.vendor.audio.dualmic.config=endfire
 persist.vendor.audio.fluence.audiorec=false
@@ -49,3 +52,6 @@ ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
 ro.vendor.sensors.cmc=false
 ro.vendor.sdk.sensors.gestures=false
+
+# SOC
+ro.soc.model=SDM660

@@ -60,3 +60,6 @@ on boot
     chown oem_5004 oem_5004 /mnt/vendor/persist/camera/dualcal/module_id.bin
     chmod 0664 /mnt/vendor/persist/camera/dualcal/dual_cal_data.bin
     chmod 0664 /mnt/vendor/persist/camera/dualcal/module_id.bin
+
+on moto-charger
+    setprop ro.board.platform sdm660
