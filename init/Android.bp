@@ -20,7 +20,7 @@ cc_library_static {
     srcs: ["init_lake.cpp"],
     include_dirs: [
         "system/core/init",
-        "device/motorola/sdm660-common"
+        "device/motorola/msm8998-common"
     ],
     shared_libs: [
         "libbase",
