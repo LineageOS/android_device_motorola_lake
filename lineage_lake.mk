@@ -20,7 +20,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Device
 $(call inherit-product, device/motorola/lake/device.mk)
