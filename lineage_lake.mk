@@ -48,9 +48,6 @@ PRODUCT_PACKAGES += \
     bootctrl.sdm660 \
     bootctrl.sdm660.recovery
 
-# Recovery
-TARGET_RECOVERY_FSTAB := device/motorola/msm8998-common/rootdir/etc/fstab.qcom
-
 # Device identifiers
 PRODUCT_DEVICE := lake
 PRODUCT_NAME := lineage_lake
