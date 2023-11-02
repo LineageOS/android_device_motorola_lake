@@ -62,6 +62,7 @@ PRODUCT_BOOT_JARS += qcom.fmradio
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.qcom \
     init.lake.rc
 
 # NFC
