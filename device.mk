@@ -67,7 +67,6 @@ endif
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.lake.rc
 
 # NFC
