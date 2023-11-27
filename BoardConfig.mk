@@ -34,21 +34,21 @@ AB_OTA_PARTITIONS += \
     vendor
 
 # Assertions
-TARGET_BOARD_INFO_FILE := device/motorola/lake/board-info.txt
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := lake,lake_n
 
 # Display
 TARGET_SCREEN_DENSITY := 420
 
-# Kernel
-BOARD_BOOT_HEADER_VERSION := 1
-BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/c0c4000.sdhci
-TARGET_KERNEL_CONFIG := lineageos_lake_defconfig
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/lake_manifest.xml
+
+# Kernel
+BOARD_BOOT_HEADER_VERSION := 1
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/c0c4000.sdhci
+BOARD_KERNEL_SEPARATED_DTBO := true
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+TARGET_KERNEL_CONFIG := lineageos_lake_defconfig
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
