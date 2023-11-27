@@ -1,7 +1,3 @@
-#
-# vendor props for lake
-#
-
 # Audio
 persist.vendor.audio.calfile0=/vendor/etc/acdbdata/Global_cal.acdb
 persist.vendor.audio.calfile1=/vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -12,6 +8,13 @@ persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb
 persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Handset_cal.acdb
 persist.vendor.audio.default.spkrdc=9929
 persist.vendor.audio.default.rcvrdc=11243
+persist.vendor.audio.dualmic.config=endfire
+persist.vendor.audio.fluence.audiorec=false
+persist.vendor.audio.fluence.speaker=false
+persist.vendor.audio.fluence.voicecall=false
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicerec=false
+ro.vendor.audio.sdk.fluencetype=none
 vendor.audio.feature.fm.enable=true
 vendor.audio.feature.incall_music.enable=false
 vendor.audio.offload.gapless.enabled=false
@@ -22,15 +25,6 @@ bluetooth.device.default_name=moto g(7) plus
 
 # Display
 ro.hardware.vulkan=sdm660
-
-# Fluence
-persist.vendor.audio.dualmic.config=endfire
-persist.vendor.audio.fluence.audiorec=false
-persist.vendor.audio.fluence.speaker=false
-persist.vendor.audio.fluence.voicecall=false
-persist.vendor.audio.fluence.voicecomm=true
-persist.vendor.audio.fluence.voicerec=false
-ro.vendor.audio.sdk.fluencetype=none
 
 # FM
 ro.vendor.fm.use_audio_session=true
