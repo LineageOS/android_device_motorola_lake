@@ -1,4 +1,13 @@
-# Device Proprietary files - from motorola/lake_retail/lake:10/QPWS30.61-21-18-7/fac4a:user/release-keys, unless pinned
+## All proprietary files from this list, unless pinned and noted otherwise,
+## are from lake_retail (QPWS30.61-21-18-7-12).
+
+# Audio (Prebuilt Audio HAL)
+vendor/lib/hw/audio.primary.sdm660.so
+vendor/lib/libmotaudioutils.so
+vendor/lib/libsensorndkbridge.so
+vendor/lib/libtinycompress_vendor.so
+vendor/lib/libunshorten.so
+vendor/lib/vndk/libtinyalsa.so
 
 # Audio - ACDB
 vendor/etc/acdbdata/Bluetooth_cal.acdb
@@ -8,14 +17,6 @@ vendor/etc/acdbdata/Handset_cal.acdb
 vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
-
-# Audio - Prebuilt
-vendor/lib/hw/audio.primary.sdm660.so
-vendor/lib/libmotaudioutils.so
-vendor/lib/libsensorndkbridge.so
-vendor/lib/libtinycompress_vendor.so
-vendor/lib/libunshorten.so
-vendor/lib/vndk/libtinyalsa.so
 
 # Audio - Soundfx
 vendor/lib/soundfx/libmmieffectswrapper.so
@@ -304,6 +305,19 @@ vendor/lib/libchromatix_s5k2l7sa_preview.so
 vendor/lib/libchromatix_s5k2l7sa_snapshot.so
 vendor/lib/libchromatix_s5k2l7sa_video_4k.so
 
+# Camera - Firmware
+vendor/firmware/cpp_firmware_v1_10_0.fw
+vendor/firmware/cpp_firmware_v1_12_0.fw
+vendor/firmware/cpp_firmware_v1_1_1.fw
+vendor/firmware/cpp_firmware_v1_1_6.fw
+vendor/firmware/cpp_firmware_v1_2_0.fw
+vendor/firmware/cpp_firmware_v1_4_0.fw
+vendor/firmware/cpp_firmware_v1_5_0.fw
+vendor/firmware/cpp_firmware_v1_5_1.fw
+vendor/firmware/cpp_firmware_v1_5_2.fw
+vendor/firmware/cpp_firmware_v1_6_0.fw
+vendor/firmware/cpp_firmware_v1_8_0.fw
+
 # Camera - mmcamera
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
@@ -430,28 +444,15 @@ vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
-# Camera - Postprocessing
-vendor/lib/libS5k2l7Pdaf.so
-vendor/lib/libS5k2l7PdafCamif.so
-vendor/lib/libmm-qcamera.so
-
-# Camera - Firmware
-vendor/firmware/cpp_firmware_v1_10_0.fw
-vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_5_1.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_8_0.fw
-
-# Camera - JNI
+# Camera - MotCamera2
+-system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
 system/etc/permissions/com.motorola.camera2.denali.xml
 system/etc/permissions/com.motorola.motosignature.xml
 system/etc/permissions/privapp-permissions-com.motorola.camera2.xml|7d108928f254ddd31d853e0bc59fd9e2bc244241
+system/framework/com.motorola.motosignature.jar
+system/priv-app/MotCamera2/MotCamera2.apk
+
+# Camera - MotCamera2 (JNI)
 system/priv-app/MotCamera2/lib/arm64/libEvPlusAndroidLib.so
 system/priv-app/MotCamera2/lib/arm64/libFNVfbEngineHAL.so
 system/priv-app/MotCamera2/lib/arm64/libPlatformValidatorShared.so
@@ -502,11 +503,10 @@ system/priv-app/MotCamera2/lib/arm64/libsymphony-cpu.so
 system/priv-app/MotCamera2/lib/arm64/libubifocus.so
 system/priv-app/MotCamera2/lib/arm64/libzxing-core.so
 
-# Camera - Motcamera2
--system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
-system/etc/permissions/com.motorola.motosignature.xml
-system/framework/com.motorola.motosignature.jar
-system/priv-app/MotCamera2/MotCamera2.apk
+# Camera - Postprocessing
+vendor/lib/libS5k2l7Pdaf.so
+vendor/lib/libS5k2l7PdafCamif.so
+vendor/lib/libmm-qcamera.so
 
 # Display Calibrations
 vendor/etc/qdcm_calib_data_mipi_mot_vid_boe_1080p_624.xml
@@ -536,10 +536,6 @@ vendor/lib64/libdrmtime.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
-
-# Haptics - Vibrator
-vendor/firmware/aw869x_haptic.bin
-vendor/firmware/aw869x_rtp.bin
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
@@ -573,7 +569,7 @@ vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 
-# Misc firmware
+# Misc Firmware
 vendor/firmware/crus_sp_rx0.bin
 vendor/firmware/crus_sp_rx1.bin
 vendor/firmware/crus_sp_rx2.bin
@@ -586,13 +582,17 @@ vendor/firmware/crus_sp_rx7.bin
 # NFC
 vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so
 
-# Sensors - motorola/river_retail/river: 10/QPUS30.52-33-11/df129:user/release-keys
+# Sensors - from river_retail (QPUS30.52-33-11)
 vendor/lib/sensors.ssc.so|6a7c2d2810b2e1ccf21ed3093b73abdfde1ca335
 vendor/lib64/sensors.ssc.so|19238bd20078d92e6fc0c2dbc82386b044f6395d
 
-# Sound Card - Marley
+# Sound Card (Marley)
 vendor/firmware/marley-dsp1-ultrasound.bin
 vendor/firmware/marley-dsp1-ultrasound.wmfw
 vendor/firmware/marley-dsp2-aov-frontend.wmfw
 vendor/firmware/marley-dsp2-aov-vrgain.bin
 vendor/firmware/marley-dsp3-aov-control.wmfw
+
+# Vibrator
+vendor/firmware/aw869x_haptic.bin
+vendor/firmware/aw869x_rtp.bin
