@@ -506,7 +506,7 @@ system/priv-app/MotCamera2/lib/arm64/libzxing-core.so
 -system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
 system/etc/permissions/com.motorola.motosignature.xml
 system/framework/com.motorola.motosignature.jar
-system/priv-app/MotCamera2/MotCamera2.apk
+system/priv-app/MotCamera2/MotCamera2.apk||d9d2e70b3f7dad0d6c37de1e56cfb0b4f6b98b64
 
 # Display Calibrations
 vendor/etc/qdcm_calib_data_mipi_mot_vid_boe_1080p_624.xml
