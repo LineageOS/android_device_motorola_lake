@@ -452,6 +452,13 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 system/etc/permissions/com.motorola.camera2.denali.xml
 system/etc/permissions/com.motorola.motosignature.xml
 system/etc/permissions/privapp-permissions-com.motorola.camera2.xml|7d108928f254ddd31d853e0bc59fd9e2bc244241
+<<<<<<< HEAD   (b9b9a2 lake: Sort blobs list /w sort-blobs-list.py)
+=======
+system/framework/com.motorola.motosignature.jar
+system/priv-app/MotCamera2/MotCamera2.apk|d9d2e70b3f7dad0d6c37de1e56cfb0b4f6b98b64
+
+# Camera - MotCamera2 (JNI)
+>>>>>>> CHANGE (d62e7d lake: Pin MotCamera2)
 system/priv-app/MotCamera2/lib/arm64/libEvPlusAndroidLib.so
 system/priv-app/MotCamera2/lib/arm64/libFNVfbEngineHAL.so
 system/priv-app/MotCamera2/lib/arm64/libPlatformValidatorShared.so
