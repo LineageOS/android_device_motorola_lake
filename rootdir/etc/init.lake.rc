@@ -25,9 +25,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on early-init
-    setprop ro.boot.product.hardware.sku qcril
-
 on boot
     # change permission for capsensor
     chown system system /sys/class/sensors/Moto\ CapSense\ Ch0/enable
