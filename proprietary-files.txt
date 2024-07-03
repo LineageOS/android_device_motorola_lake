@@ -26,7 +26,7 @@ vendor/etc/camera/mot_imx519_chromatix.xml
 vendor/etc/camera/mot_ov12a10_chromatix.xml
 vendor/etc/camera/mot_s5k5e9_chromatix.xml
 vendor/lib/hw/camera.sdm660.so
-vendor/lib/hw/libSonyDefocus.so
+vendor/lib/hw/libSonyDefocus.so|4fa8d717d66637a93db6b90730e3acf892356216
 vendor/lib/lib_mot_led_calibration.so
 vendor/lib/lib_motsensorlistener.so
 vendor/lib/libactuator_mot_ak7371.so
@@ -310,19 +310,19 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_iface_modules.so
-vendor/lib/libmmcamera2_imglib_modules.so
+vendor/lib/libmmcamera2_iface_modules.so|ad0b44fe012a545018d47e06e00ef9d66e98e6af
+vendor/lib/libmmcamera2_imglib_modules.so|78a320e3cb0062d5d5f38dcaf2f813cef211f9d7
 vendor/lib/libmmcamera2_is.so
 vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct.so
+vendor/lib/libmmcamera2_mct.so|7eaa6e94de119e3ed3d3b7193ea4f6f1775cd29a
 vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so
+vendor/lib/libmmcamera2_sensor_modules.so|82973461d42eb7b9807828708be96fb6fc804d48
 vendor/lib/libmmcamera2_stats_algorithm.so
 vendor/lib/libmmcamera2_stats_lib.so
-vendor/lib/libmmcamera2_stats_modules.so
+vendor/lib/libmmcamera2_stats_modules.so|133aaea045c4931109d3a9aed15004243209fd72
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_depth_map.so
 vendor/lib/libmmcamera_eebinparse.so
@@ -568,7 +568,7 @@ vendor/firmware/crus_sp_rx6.bin
 vendor/firmware/crus_sp_rx7.bin
 
 # NFC
-vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so
+vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so|7eacccad960396cc8acf372ca8b9b3d0123577a4
 
 # Sensors - from river_retail (QPUS30.52-33-11)
 vendor/lib/sensors.ssc.so|6a7c2d2810b2e1ccf21ed3093b73abdfde1ca335
