@@ -127,10 +127,6 @@ PRODUCT_PACKAGES_DEBUG += \
     bootctl \
     update_engine_client
 
-# VNDK
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so
-
 # Inherit from motorola msm8998-common
 TARGET_MOTO_PLATFORM := sdm660
 $(call inherit-product, device/motorola/msm8998-common/common.mk)
