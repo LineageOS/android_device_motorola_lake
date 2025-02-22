@@ -83,8 +83,8 @@ GMS_MAKEFILE=gms_minimal.mk
 endif
 
 # Init
-PRODUCT_PACKAGES += \
-    init.lake.rc
+$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
+        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
 
 # NFC
 PRODUCT_PACKAGES += \
