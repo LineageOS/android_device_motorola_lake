@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+TARGET_HAS_IMS := true
+
 # Vendor blobs
 $(call inherit-product, vendor/motorola/lake/lake-vendor.mk)
 
