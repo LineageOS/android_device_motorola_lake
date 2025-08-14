@@ -40,9 +40,6 @@ TARGET_OTA_ASSERT_DEVICE := lake,lake_n
 # Display
 TARGET_SCREEN_DENSITY := 420
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/lake_manifest.xml
-
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 1
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/c0c4000.sdhci
